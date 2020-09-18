@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import {
   View,
-  Text,
   TextInput,
   Animated,
   StyleSheet,
@@ -84,9 +83,9 @@ export default class TextField extends PureComponent {
 
     labelOffset: Label.propTypes.offset,
 
-    labelTextStyle: Text.propTypes.style,
-    titleTextStyle: Text.propTypes.style,
-    affixTextStyle: Text.propTypes.style,
+    labelTextStyle: PropTypes.any,
+    titleTextStyle: PropTypes.any,
+    affixTextStyle: PropTypes.any,
 
     tintColor: PropTypes.string,
     textColor: PropTypes.string,
